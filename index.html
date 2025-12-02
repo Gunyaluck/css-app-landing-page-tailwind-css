@@ -7,7 +7,7 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#f6f6fb] min-h-screen flex justify-center">
+  
     <main        class="w-[1440px] h-[968px] pt-[120px] pb-[140px] px-[120px] gap-[120px] flex flex-col"      >
       <div class="feature-section flex gap-5 justify-center py-32">
 
@@ -68,5 +68,69 @@
     
       </div>
     </main>
+
+  <body class="bg-[#f6f6fb] min-h-screen flex justify-center">
+    <div class="flex justify-center">
+      <header class="w-[1440px] h-32 p-6 gap-[10px] fixed z-[1000]">
+        <nav
+          class="border-b border-b-white-500 rounded-[99px] bg-white m-4 w-[1392px] h-20 px-20 py-3 flex flex-row justify-between items-center"
+        >
+          <div class="w-[53px] h-[13.39px] relative left-[1px]">
+            <div class="w-[48.53px] h-[13.39px] relative left-[1px]">Acme</div>
+            <div
+              class="w-[4.4px] h-[4.4px] rounded-full bg-[#5e44ff] absolute top-[4px] right-[6px]"
+            ></div>
+          </div>
+
+          <div
+            class="w-[420px] h-14 flex justify-around items-center px-6 py-4"
+          >
+            <div class="text-[#5e44ff] underline text-[16px]">Home</div>
+            <div class="feature">Features</div>
+            <div class="price">Pricing</div>
+            <div class="contact">Contact</div>
+          </div>
+        </nav>
+      </header>
+
+      <main
+        class="w-[1440px] h-[968px] pt-[120px] pb-[140px] px-[120px] gap-[120px] flex flex-col"
+      >
+        <section
+          class="w-[1200px] h-[316px] gap-[40px] mt-[120px] flex flex-col justify-between items-center"
+        >
+          <div
+            class="w-[236px] h-[40px] rounded-[999px] px-[20px] py-[8px] bg-[rgba(86,58,255,0.1)]"
+          >
+            <div
+              class="w-[196px] h-6 font-medium text-[16px] text-[rgba(94,68,255,1)]"
+            >
+            🌈️ Acme Productivity App
+            </div>
+          </div>
+          <div
+            class="w-[1200px] h-[140px] gap-6 flex flex-col justify-center items-center"
+          >
+            <h1
+              class="w-[1200px] h-[84px] font-extrabold text-[80px] text-center"
+            >
+              Boost Your <span class="text-[#5e44ff]">Product</span>ivity
+            </h1>
+            <h3
+              class="w-[1200px] h-8 font-semibold text-[24px] text-center text-[#1a1a2c]"
+            >
+              Streamline your workflow with our all-in-one productivity app
+            </h3>
+          </div>
+          <button
+            class="w-[187px] h-14 rounded-[16px] border-none px-9 py-4 gap-[6px] bg-[#1a1a2c]"
+          >
+            <div class="w-[115px] h-6 font-semibold text-[16px] text-white">
+              Start Free Trial
+            </div>
+          </button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>
