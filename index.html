@@ -7,10 +7,18 @@
     <title>Acme App</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#f6f6fb] min-h-screen flex justify-center">
-    <header class="w-[1440px] h-32 p-6 gap-[10px] fixed z-[1000]">
+  <body class="bg-[#f6f6fb] min-h-screen flex justify-center max-[375px]:bg-white max-[375px]:items-start max-[375px]:flex-col">
+    <header class="w-[1440px] h-32 p-6 gap-[10px] fixed z-[1000] max-[375px]:w-[343px] max-[375px]:h-[56px] max-[375px]:flex max-[375px]:justify-center max-[375px]:static max-[375px]:mt-6">
       <nav
-        class="border-b border-b-white-500 rounded-[99px] bg-white m-4 w-[1392px] h-20 px-20 py-3 flex flex-row justify-between items-center"
+        class="border-b border-b-white-500 rounded-[99px] bg-white m-4 w-[1392px] h-20 px-20 py-3 flex flex-row justify-between items-center max-[375px]:w-full
+        max-[375px]:h-[48px]
+        max-[375px]:px-4 
+        max-[375px]:py-2
+        max-[375px]:rounded-[12px]
+        max-[375px]:shadow-[0_18px_60px_rgba(0,0,0,0.12)]
+        max-[375px]:border-none
+        max-[375px]:mx-0
+        max-[375px]:mt-4"
       >
         <div class="w-[53px] h-[13.39px] relative left-[1px]">
           <div class="w-[48.53px] h-[13.39px] relative left-[1px]">Acme</div>
@@ -20,21 +28,28 @@
         </div>
 
         <div
-          class="w-[420px] h-14 flex justify-around items-center px-6 py-4"
+          class="flex w-[420px] h-14 justify-around items-center px-6 py-4 max-[375px]:hidden"
         >
           <div class="text-[#5e44ff] underline text-[16px]">Home</div>
           <div class="feature">Features</div>
           <div class="price">Pricing</div>
           <div class="contact">Contact</div>
         </div>
+
+        <button id="menuBtn" class="hidden max-[375px]:flex max-[375px]:flex-col max-[375px]:gap-1">
+          <div class="w-6 h-[3px] bg-black"></div>
+          <div class="w-6 h-[3px] bg-black"></div>
+          <div class="w-6 h-[3px] bg-black"></div>
+        </button>
+
       </nav>
     </header>
-    <div class="flex flex-col justify-center">
+    <div class="flex flex-col justify-center max-[375px]:items-center max-[375px]:py-4">
       <div
-        class="w-[1440px] h-[968px] pt-[120px] pb-[140px] px-[120px] gap-[120px] flex flex-col"
+        class="w-[1440px] h-[968px] pt-[120px] pb-[140px] px-[120px] gap-[120px] flex flex-col max-[375px]:w-[343px] max-[375px]:h-auto max-[375px]:pt-[40px] max-[375px]:pb-[32px] max-[375px]:px-6 max-[375px]:gap-[40px] max-[375px]:bg-white max-[375px]:rounded-[32px]"
       >
         <section
-          class="w-[1200px] h-[316px] gap-[40px] mt-[120px] flex flex-col justify-between items-center"
+          class="w-[1200px] h-[316px] gap-[40px] mt-[120px] flex flex-col justify-between items-center max-[375px]:mt-[24px] max-[375px]:w-full max-[375px]:h-auto max-[375px]:gap-[32px] max-[375px]:items-center"
         >
           <div
             class="w-[236px] h-[40px] rounded-[999px] px-[20px] py-[8px] bg-[rgba(86,58,255,0.1)]"
@@ -46,29 +61,29 @@
             </div>
           </div>
           <div
-            class="w-[1200px] h-[140px] gap-6 flex flex-col justify-center items-center"
+            class="w-[1200px] h-[140px] gap-6 flex flex-col justify-center items-center max-[375px]:w-full max-[375px]:h-auto max-[375px]:gap-4"
           >
             <h1
-              class="w-[1200px] h-[84px] font-extrabold text-[80px] text-center"
+              class="w-[1200px] h-[84px] font-extrabold text-[80px] text-center max-[375px]:w-full max-[375px]:h-auto max-[375px]:text-[32px] max-[375px]:leading-[38px]"
             >
               Boost Your <span class="text-[#5e44ff]">Product</span>ivity
             </h1>
             <h3
-              class="w-[1200px] h-8 font-semibold text-[24px] text-center text-[#1a1a2c]"
+              class="w-[1200px] h-8 font-semibold text-[24px] text-center text-[#1a1a2c] max-[375px]:w-full max-[375px]:h-auto max-[375px]:text-[14px] max-[375px]:leading-[20px] max-[375px]:px-4"
             >
               Streamline your workflow with our all-in-one productivity app
             </h3>
           </div>
           <button
-            class="w-[187px] h-14 rounded-[16px] border-none px-9 py-4 gap-[6px] bg-[#1a1a2c]"
+            class="w-[187px] h-14 rounded-[16px] border-none px-9 py-4 gap-[6px] bg-[#1a1a2c] max-[375px]:w-[187px]"
           >
             <div class="w-[115px] h-6 font-semibold text-[16px] text-white">
               Start Free Trial
             </div>
           </button>
         </section>
-        <div class="feature-section flex gap-5 justify-center ">
-          <section class="bg-[#D7E5F6] p-7 rounded-[24px] flex flex-col gap-[40px] w-[387px] ">
+        <div class="feature-section flex gap-5 justify-center max-[375px]:flex-col max-[375px]:items-stretch max-[375px]:gap-4">
+          <section class="bg-[#D7E5F6] p-7 rounded-[24px] flex flex-col gap-[40px] w-[387px] max-[375px]:w-full">
           <div class="p-3.5 bg-white/60 w-fit rounded-2xl ">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.42 10.112C16.26 5.17733 22.26 2 29 2C29.2652 2 29.5196 2.10536 29.7071 2.29289C29.8946 2.48043 30 2.73478 30 3C30 9.74133 26.8227 15.74 21.888 19.5813C22.0932 20.867 22.0171 22.1819 21.6648 23.4352C21.3125 24.6886 20.6925 25.8506 19.8475 26.8411C19.0026 27.8316 17.9528 28.6269 16.7706 29.1723C15.5884 29.7177 14.3019 30.0001 13 30C12.7348 30 12.4804 29.8946 12.2929 29.7071C12.1054 29.5196 12 29.2652 12 29V23.492C10.7039 22.4685 9.53234 21.2965 8.50933 20H3C2.73478 20 2.48043 19.8946 2.29289 19.7071C2.10536 19.5196 2 19.2652 2 19C1.99989 17.6979 2.28231 16.4114 2.82776 15.2291C3.37322 14.0467 4.16871 12.9969 5.15935 12.1519C6.14998 11.3069 7.31217 10.6869 8.5657 10.3347C9.81923 9.98256 11.1342 9.90656 12.42 10.112ZM20 9C19.2044 9 18.4413 9.31607 17.8787 9.87868C17.3161 10.4413 17 11.2044 17 12C17 12.7956 17.3161 13.5587 17.8787 14.1213C18.4413 14.6839 19.2044 15 20 15C20.7957 15 21.5587 14.6839 22.1213 14.1213C22.6839 13.5587 23 12.7956 23 12C23 11.2044 22.6839 10.4413 22.1213 9.87868C21.5587 9.31607 20.7957 9 20 9Z" fill="#5E44FF"/>
@@ -86,7 +101,7 @@
             </p>
           </div>
           </section>
-          <section class="bg-[#D8E0FC] p-7 rounded-[24px] flex flex-col gap-[40px] w-[387px] ">
+          <section class="bg-[#D8E0FC] p-7 rounded-[24px] flex flex-col gap-[40px] w-[387px] max-[375px]:w-full">
           <div class="p-3.5 bg-white/60 w-fit rounded-2xl ">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M3 3C2.73478 3 2.48043 3.10536 2.29289 3.29289C2.10536 3.48043 2 3.73478 2 4C2 4.26522 2.10536 4.51957 2.29289 4.70711C2.48043 4.89464 2.73478 5 3 5H4V19C4 20.0609 4.42143 21.0783 5.17157 21.8284C5.92172 22.5786 6.93913 23 8 23H9.61333L8.05067 27.684C7.96686 27.9358 7.9865 28.2105 8.10527 28.4478C8.22405 28.6851 8.43222 28.8655 8.684 28.9493C8.93578 29.0331 9.21054 29.0135 9.44783 28.8947C9.68513 28.7759 9.86553 28.5678 9.94933 28.316L10.388 27H21.612L22.052 28.316C22.143 28.5581 22.3243 28.7555 22.5578 28.8668C22.7913 28.978 23.0589 28.9945 23.3042 28.9127C23.5496 28.8309 23.7537 28.6572 23.8738 28.4281C23.9938 28.199 24.0204 27.9323 23.948 27.684L22.388 23H24C25.0609 23 26.0783 22.5786 26.8284 21.8284C27.5786 21.0783 28 20.0609 28 19V5H29C29.2652 5 29.5196 4.89464 29.7071 4.70711C29.8946 4.51957 30 4.26522 30 4C30 3.73478 29.8946 3.48043 29.7071 3.29289C29.5196 3.10536 29.2652 3 29 3H3ZM11.72 23H20.28L20.9467 25H11.0533L11.72 23ZM22.5 11.0067C22.6146 10.9415 22.7153 10.8543 22.7961 10.75C22.8769 10.6458 22.9363 10.5266 22.9708 10.3994C23.0054 10.2721 23.0144 10.1392 22.9974 10.0085C22.9804 9.87768 22.9377 9.75155 22.8718 9.63734C22.8058 9.52313 22.7179 9.42309 22.6132 9.34298C22.5084 9.26287 22.3888 9.20428 22.2613 9.17057C22.1338 9.13686 22.0009 9.1287 21.8703 9.14657C21.7396 9.16443 21.6138 9.20797 21.5 9.27467C19.6821 10.327 18.0738 11.7056 16.756 13.3413L14.7067 11.2933C14.5192 11.1061 14.265 11.0009 14 11.0009C13.735 11.0009 13.4808 11.1061 13.2933 11.2933L9.29333 15.2933C9.19508 15.3849 9.11628 15.4953 9.06163 15.6179C9.00697 15.7406 8.97758 15.873 8.97521 16.0073C8.97284 16.1416 8.99754 16.2749 9.04784 16.3995C9.09813 16.524 9.17299 16.6371 9.26795 16.732C9.36291 16.827 9.47602 16.9019 9.60054 16.9522C9.72505 17.0025 9.85843 17.0272 9.9927 17.0248C10.127 17.0224 10.2594 16.993 10.3821 16.9384C10.5047 16.8837 10.6151 16.8049 10.7067 16.7067L14 13.4133L16.156 15.5707C16.2594 15.6741 16.3843 15.7536 16.5218 15.8035C16.6593 15.8534 16.8061 15.8726 16.9518 15.8596C17.0975 15.8467 17.2386 15.8019 17.3651 15.7285C17.4916 15.655 17.6005 15.5547 17.684 15.4347C18.946 13.6241 20.59 12.1125 22.5 11.0067Z" fill="#5E44FF"/>
@@ -103,7 +118,7 @@
             </p>
           </div>
           </section>
-          <section class="bg-[#E8DCF6] p-7 rounded-[24px] flex flex-col gap-[40px] w-[387px] ">
+          <section class="bg-[#E8DCF6] p-7 rounded-[24px] flex flex-col gap-[40px] w-[387px] max-[375px]:w-full">
           <div class="p-3.5 bg-white/60 w-fit rounded-2xl ">
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16 3C8.82 3 3 8.82 3 16C3 23.18 8.82 29 16 29C23.18 29 29 23.18 29 16C29 8.82 23.18 3 16 3ZM12.5 11C11.78 11 11.396 11.5587 11.252 11.8453C11.0809 12.2059 10.9947 12.6009 11 13C11 13.3973 11.0787 13.8067 11.252 14.1547C11.396 14.4413 11.7787 15 12.5 15C13.22 15 13.604 14.4413 13.748 14.1547C13.9213 13.808 14 13.3973 14 13C14 12.6027 13.9213 12.1933 13.748 11.8453C13.604 11.5587 13.2213 11 12.5 11ZM18.252 11.8453C18.396 11.5587 18.7787 11 19.5 11C20.22 11 20.604 11.5587 20.748 11.8453C20.9213 12.192 21 12.6027 21 13C21 13.3973 20.9213 13.8067 20.748 14.1547C20.604 14.4413 20.2213 15 19.5 15C18.78 15 18.396 14.4413 18.252 14.1547C18.0809 13.7941 17.9947 13.3991 18 13C18 12.6027 18.0787 12.1933 18.252 11.8453ZM20.9493 20.9493C21.0476 20.8578 21.1264 20.7474 21.181 20.6247C21.2357 20.5021 21.2651 20.3696 21.2675 20.2354C21.2698 20.1011 21.2451 19.9677 21.1948 19.8432C21.1445 19.7187 21.0697 19.6056 20.9747 19.5106C20.8798 19.4157 20.7666 19.3408 20.6421 19.2905C20.5176 19.2402 20.3842 19.2155 20.25 19.2179C20.1157 19.2202 19.9833 19.2496 19.8606 19.3043C19.738 19.3589 19.6276 19.4378 19.536 19.536C19.0717 20.0004 18.5204 20.3688 17.9137 20.6202C17.307 20.8716 16.6567 21.0009 16 21.0009C15.3433 21.0009 14.693 20.8716 14.0863 20.6202C13.4796 20.3688 12.9283 20.0004 12.464 19.536C12.2744 19.3594 12.0237 19.2632 11.7646 19.2678C11.5056 19.2723 11.2584 19.3773 11.0752 19.5605C10.892 19.7437 10.787 19.9909 10.7824 20.25C10.7779 20.509 10.874 20.7598 11.0507 20.9493C12.3634 22.2618 14.1437 22.9992 16 22.9992C17.8563 22.9992 19.6366 22.2618 20.9493 20.9493Z" fill="#5E44FF"/>
@@ -122,21 +137,21 @@
         </div>
       </div>
       <div
-      class="w-[1440px] h-screen pt-[180px] flex flex-col items-center gap-y-20 bg-[#F6F6FB]"
+      class="w-[1440px] h-screen pt-[180px] flex flex-col items-center gap-y-20 bg-[#F6F6FB] max-[375px]:w-[343px] max-[375px]:h-auto max-[375px]:pt-[40px] max-[375px]:gap-y-10 max-[375px]:bg-transparent"
     >
       <div
-        class="w-[1200px] h-[666px] px-[120px] py-[80px] flex flex-col items-center gap-y-[40px] rounded-3xl bg-[#FFFFFFB2]"
+        class="w-[1200px] h-[666px] px-[120px] py-[80px] flex flex-col items-center gap-y-[40px] rounded-3xl bg-[#FFFFFFB2] max-[375px]:w-full max-[375px]:h-auto max-[375px]:px-6 max-[375px]:py-6"
       >
         <h1
           class="w-[261px] h-[48px] font-bold text-[44px] flex justify-center items-center"
         >
           Get in Touch
         </h1>
-        <form class="flex flex-col gap-[40px]">
+        <form class="flex flex-col gap-[40px] max-[375px]:w-full">
           <div
-            class="flex flex-col justify-items-center w-[589px] h-[322px] gap-[20px]"
+            class="flex flex-col justify-items-center w-[589px] h-[322px] gap-[20px] max-[375px]:w-full max-[375px]:h-auto"
           >
-            <div class="flex flex-col gap-[4px]">
+            <div class="flex flex-col gap-[4px] max-[375px]:w-full">
               <label for="name">Name</label>
               <input
                 id="name"
@@ -145,7 +160,7 @@
                 placeholder="John Doc"
               />
             </div>
-            <div class="flex flex-col gap-[4px]">
+            <div class="flex flex-col gap-[4px] max-[375px]:w-full">
               <label for="email">Email</label>
               <input
                 id="email"
@@ -154,7 +169,7 @@
                 placeholder="john@example.com"
               />
             </div>
-            <div class="flex flex-col gap-[4px]">
+            <div class="flex flex-col gap-[4px] max-[375px]:w-full">
               <label for="message">Message</label>
               <textarea
                 class="max-h-[102px] pt-[12px] pr-[2px] pb-[2px] pl-[16px] rounded-[12px] border-[1px] border-[#E0E0ED]"
@@ -166,15 +181,15 @@
             </div>
           </div>
           <button
-            class="px-[36px] py-[16px] text-[#FFFFFF] bg-[black] rounded-[16px]"
+            class="px-[36px] py-[16px] text-[#FFFFFF] bg-[black] rounded-[16px] max-[375px]:w-full"
             type="submit"
           >
             Submit
           </button>
         </form>
       </div>
-      <footer class="w-[1200px] h-[24px]">
-        <nav class="flex flex-row justify-between">
+      <footer class="w-[1200px] h-[24px] max-[375px]:w-full max-[375px]:h-auto max-[375px]:mt-6">
+        <nav class="flex flex-row justify-between max-[375px]:flex-col max-[375px]:items-center max-[375px]:gap-4">
           <p class="font-medium text-[#5F5F76]">Acme productivity app ©2024 </p>
           <div class="flex justify-between gap-[37px]">
             <a class="font-semibold text-[#1A1A2C]">FAQ</a>
